@@ -26,7 +26,7 @@ A simple full-stack application demonstrating a React frontend communicating wit
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/sirdeggen/starter
    cd starter
    ```
 
