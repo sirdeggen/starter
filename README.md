@@ -56,13 +56,13 @@ This will start:
 
 Logs are prefixed and colored:
 - Backend: `[back]` (requests in blue, responses in green)
-- Frontend: `[front]` (in yellow)
+- Frontend: `[front]`
 
 Alternatively, run individually:
 - Backend: `cd backend && npm run dev`
 - Frontend: `cd frontend && npm run dev`
 
-### Building for Production
+### Building
 
 - Frontend: `cd frontend && npm run build`
 - Backend: `cd backend && npm run build`

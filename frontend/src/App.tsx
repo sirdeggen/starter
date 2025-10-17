@@ -3,7 +3,15 @@ import { PrivateKey } from '@bsv/sdk'
 
 function App (): React.ReactNode {
   const [message, setMessage] = useState<string>('')
-  const [key, _] = useState<string>(PrivateKey.fromRandom().toWif())
+  const [key] = useState<string>(PrivateKey.fromRandom().toWif())
+
+  const handleGetClick = (): void => {
+    handleGet().catch(console.error)
+  }
+
+  const handlePostClick = (): void => {
+    handlePost().catch(console.error)
+  }
 
   const handleGet = async (): Promise<void> => {
     try {
@@ -36,8 +44,8 @@ function App (): React.ReactNode {
       <h1>Hello World</h1>
       <h2>Click the buttons below to test the API</h2>
       <section style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '1rem' }}>
-        <button onClick={handleGet}>GET something</button>
-        <button onClick={handlePost}>POST some data</button>
+        <button onClick={handleGetClick}>GET something</button>
+        <button onClick={handlePostClick}>POST some data</button>
       </section>
       {message !== '' && <p>{message}</p>}
     </div>
