@@ -31,6 +31,12 @@ A simple full-stack application demonstrating a React frontend communicating wit
    ```
 
 2. Install dependencies for both frontend and backend:
+
+   ```bash
+   ./install.sh
+   ```
+
+   Or manually:
    ```bash
    cd frontend && npm install && cd ..
    cd backend && npm install && cd ..
